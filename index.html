@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <form id="contact" method="post">
+      <h3>Contact Form</h3>
+      <h4>Lorem ipsum dolor sit amet.</h4>
+      <fieldset>
+        <input id="name" name="name" placeholder="Nom *" type="text" class="username" />
+      </fieldset>
+      <fieldset>
+        <input id="company" name="company" placeholder="Societé" type="text" class="company" />
+      </fieldset>
+      <fieldset>
+        <input id="phone" name="phone" placeholder="Telephone" type="text" class="phone" />
+      </fieldset>
+      <fieldset>
+        <input id="email" name="email" placeholder="Email *" type="email" class="email" />
+      </fieldset>
+      <fieldset>
+        <textarea id="message" name="message" placeholder="Message *" class="message"></textarea>
+      </fieldset>
+      <fieldset>
+        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending" class="submit">
+          GET IN TOUCH
+        </button>
+      </fieldset>
+    </form>
+  </div>
+
+  <!-- loader -->
+  <div class="loader">
+    <img src="https://media.giphy.com/media/MEiZ5h8lOkM7rwideE/giphy.gif" alt="" />
+  </div>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script src="index.js"></script>
+ 
+</body>
+
+</html>
